@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "be.deweergallery.app"
-        version   = "2.0.1">
+        version   = "2.0.0">
 
     <name>Deweer Gallery</name>
 
@@ -15,7 +15,7 @@
     <author href="http://my-websitebuilder.com" email="support@my-websitebuilder.com">
         My-Websitebuilder Team
     </author>
-    
+
     <!--
         Enable individual API permissions here.
         The "device" permission is required for the 'deviceready' event.
@@ -31,7 +31,7 @@
 
     <!-- Customize your app and platform with the preference element. -->
     <!--<preference name="phonegap-version"           value="2.9.0" />          <!-- all: current version of PhoneGap -->
-    <preference name="phonegap-version" value="3.5.0" />          	    <!-- all: current version of PhoneGap -->
+	<preference name="phonegap-version"           value="3.3.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -94,7 +94,7 @@
 
         Otherwise, you can specify specific domains:
     -->
-    <!--<access origin="http://127.0.0.1*"/>--> <!-- allow local pages -->
+    <!--<access origin="http://127.0.0.1*"/> <!-- allow local pages -->
     <access origin="*" />
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
