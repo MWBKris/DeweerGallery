@@ -5,19 +5,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <script type="text/javascript" charset="utf-8" src="../phonegap.js"></script>
 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="jquery-2.0.3.js"></script>
+        <script type="text/javascript" src="../PushNotification.js"></script>
 		<script src="jquery-ui.js"></script>
 		<script src="jquery.ui.map.js"></script>
 		<script src="jquery.ui.map.extensions.js"></script>
 		<script src="jquery.ui.map.services.js"></script>
         <script src="script.js"></script>
+        <script>
+        	var urll = 'http://www.collectorsclub.be/mobile/index.php?gcm_regid=' + device.uuid;
+        	$('.triggerIframe').attr('href', urll);
+        	$('#iFrame').attr('src', urll);
+        </script>
     </head>
     <body id="body">
         <div id="fullMenu" class="fullScreen mainWindow center">
             <menu>
                 <li><img src="logo.png" id="mainLogo" /></li>
-                <li><a href="http://www.deweergallery.be/mobile/" class="button triggerIframe lblViewSite">View our mobile website</a></li>
+                <li><a href="#" +  class="button triggerIframe lblViewSite">View our mobile website</a></li>
                 <li><a href="#" class="button onlineChecker lblRouteDescription" id="showRoute">Route description</a></li>
                 <li><a href="#" class="button onlineChecker lblSendUsAPhoto" id="showPhotoForm">Send us a picture</a></li>
             </menu>
@@ -26,7 +33,7 @@
         <div id="iFrame" class="fullScreen notMainWindow">
             <a href="#" class="button untriggerIframe lblBackToMainMenu">Back to main menu</a>
 
-            <iframe src="http://www.deweergallery.be/mobile/" class="bottomFiller">
+            <iframe class="bottomFiller">
             </iframe>
         </div>
 
